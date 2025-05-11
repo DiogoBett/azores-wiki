@@ -8,10 +8,11 @@ export default function About(): JSX.Element {
       description="Learn more about the Azores Wiki project">
       <main style={{ padding: '2rem', textAlign: 'center' }}>
         <h1>About Azores Wiki</h1>
-        <hr/>
-        <p>Azores Wiki is a project dedicated to showcasing the beauty and culture of the Azores archipelago.</p>
-        <p>Our goal is to providedetailed and accurate information about each of the nine islands.</p>
-        <p>We hope this wiki serves as a valuable resource.</p>
+        <hr />
+        <p>Azores Wiki is a project dedicated to showcasing the Azores archipelago.</p>
+        <p>My personal goal with this project is to provide detailed, accurate and personal information about each of the nine islands.</p>
+        <p>I hope this wiki serves as a valuable resource for those wanting to know more about the Azores.</p>
+        <img src="img/azores-banner.png" title="Santa Maria - By: Diogo Bettencourt" className="medium-img" />
       </main>
     </Layout>
   );
