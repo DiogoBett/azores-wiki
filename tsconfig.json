@@ -1,0 +1,11 @@
+{
+  "extends": "@docusaurus/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "paths": {
+      "@theme/*": ["./node_modules/@docusaurus/theme-classic/lib/theme/*"]
+    }
+  },
+  "exclude": [".docusaurus", "build"]
+}

@@ -1,0 +1,54 @@
+/* General Styling for the Index Page */
+.main {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--background-color); /* Dynamic background color */
+  color: var(--text-color); /* Dynamic text color */
+}
+
+/* Styling for the Map Container */
+.mapContainer {
+  position: relative;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+/* Styling for the Map Image */
+.mapImage {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid var(--highlight-color); /* Dynamic border color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mapImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Headline Styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--highlight-color); /* Dynamic highlight color */
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-secondary-color); /* Secondary text color */
+}
+
+/* Interactive Links in the Index */
+a {
+  color: var(--navbar-link-color); /* Dynamic link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--navbar-link-hover-color); /* Dynamic link hover color */
+}

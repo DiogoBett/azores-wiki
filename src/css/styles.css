@@ -1,0 +1,261 @@
+/* General styles for the body */
+body {
+  /* Default to Dark Mode */
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Light and Dark Mode Variables */
+:root {
+  /* Light Mode Variables */
+  --background-light: #f4f4f4; /* Soft light gray */
+  --text-light: #1c1c1c; /* Dark gray for text */
+  --highlight-light: #005f99; /* Muted blue for highlights */
+  --accent-light: #0077cc; /* Calm blue for accents */
+  --sidebar-light: #e6e6e6; /* Light gray for sidebar background */
+  --border-light: #d0d0d0; /* Light gray for borders */
+
+  /* Dark Mode Variables */
+  --background-dark: #121212; /* Deep black for background */
+  --text-dark: #e5e5e5; /* Light gray for text */
+  --highlight-dark: #004080; /* Muted dark blue for highlights */
+  --accent-dark: #005f99; /* Calm dark blue for accents */
+  --sidebar-dark: #1a1a1a; /* Dark gray for sidebar background */
+  --border-dark: #2b2b2b; /* Dark gray for borders */
+}
+
+/* Use appropriate variables for Light and Dark Modes */
+[data-theme="light"] {
+  --background: var(--background-light);
+  --text: var(--text-light);
+  --highlight: var(--highlight-light);
+  --accent: var(--accent-light);
+  --sidebar: var(--sidebar-light);
+  --border: var(--border-light);
+}
+
+[data-theme="dark"] {
+  --background: var(--background-dark);
+  --text: var(--text-dark);
+  --highlight: var(--highlight-dark);
+  --accent: var(--accent-dark);
+  --sidebar: var(--sidebar-dark);
+  --border: var(--border-dark);
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--highlight);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar__link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--accent);
+}
+
+/* Sidebar styles */
+.docSidebar {
+  background-color: var(--sidebar);
+  color: var(--text);
+  padding: 1rem;
+  border-right: 1px solid var(--border);
+}
+
+.docSidebar .menu__list {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start;
+}
+
+.docSidebar .menu__list-item {
+  margin: 0.5rem 0; /* Add spacing between items */
+}
+
+.docSidebar .menu__link {
+  color: var(--text); /* Text color for sidebar links */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.docSidebar .menu__link--active,
+.docSidebar .menu__link:hover {
+  color: var(--accent); /* Accent color for active or hovered links */
+  font-weight: bold;
+}
+
+/* Breadcrumb styles */
+.breadcrumbs {
+  background-color: var(--sidebar);
+  color: var(--text);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+}
+
+.breadcrumbs a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Main content area */
+.docMainContainer {
+  background-color: var(--background);
+  color: var(--text);
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.docMainContainer h1,
+.docMainContainer h2,
+.docMainContainer h3 {
+  color: var(--highlight);
+}
+
+/* Highlight boxes */
+.admonition {
+  border-left: 4px solid var(--accent);
+  background-color: var(--sidebar);
+  padding: 1rem;
+}
+
+.admonition-title {
+  color: var(--accent);
+}
+
+/* Code blocks */
+.codeBlock {
+  background-color: var(--sidebar);
+  color: var(--text);
+  border-radius: 5px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.codeBlock .code {
+  color: var(--accent);
+}
+
+/* Footer styles */
+.footer {
+  background-color: var(--highlight);
+  color: var(--text);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Button styles */
+.button {
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--highlight);
+  opacity: 0.85;
+}
+
+/* Pagination styles */
+.pagination-nav__link {
+  background-color: var(--sidebar);
+  color: var(--text);
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid var(--border);
+}
+
+.pagination-nav__link:hover {
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+/* Search bar */
+.navbar__search-input {
+  background-color: var(--sidebar);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.navbar__search-input::placeholder {
+  color: var(--text);
+  opacity: 0.6;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table th,
+table td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--highlight);
+  color: var(--text);
+}
+
+table tr:nth-child(even) {
+  background-color: var(--sidebar);
+}
+
+table tr:hover {
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+/* Icons */
+svg {
+  fill: var(--accent);
+}
+
+svg:hover {
+  fill: var(--highlight);
+  opacity: 0.85;
+}
