@@ -27,6 +27,10 @@ const config: Config = {
   ],
 
   themeConfig: {
+    colorMode: {
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'Azores Wiki',
       logo: {
@@ -57,7 +61,6 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Explore',
