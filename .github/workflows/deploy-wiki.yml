@@ -1,0 +1,37 @@
+name: Deploy Azores Wiki
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.15.0'
+
+      - name: Dependencies
+        run: |
+          echo "Installing Dependencies..."
+          npm install
+
+      - name: Build Wiki
+        run: |
+          npm run build          
+
+      - name: Deploy Wiki
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
