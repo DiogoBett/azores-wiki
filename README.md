@@ -1,21 +1,9 @@
+> [!WARNING]  
+> This project ('azores-wiki') is currently a work in progress. Information may be incomplete and inaccurate (for now).
+
 # Azores Wiki
 
-Welcome to the **Azores Wiki**, a comprehensive guide to the beautiful Azores islands. This website provides detailed information about the islands, their history, geography, demographics, and more.
-
-## Features
-- **Islands Overview**: Explore detailed pages for each of the Azores islands:
-    - Corvo
-    - Flores
-    - Faial
-    - Pico
-    - São Jorge
-    - Graciosa
-    - Terceira
-    - São Miguel
-    - Santa Maria
-- **History**: Learn about the rich historical background of the Azores;
-- **Geography**: Discover the geographical features and landscapes of the islands;
-- **Demographics**: Understand the cultural and population aspects of the Azores.
+Welcome to the **Azores Wiki**, a personal project made to provide detailed and accurate information about each of the nine islands of the Azores archipelago.
 
 ## GitHub Pages
 
@@ -24,7 +12,7 @@ You can access the live version of the website [here](https://DiogoBett.github.i
 
 ## Technologies
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus](https://docusaurus.io/).
 
 ## License
 
