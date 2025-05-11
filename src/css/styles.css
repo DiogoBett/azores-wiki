@@ -1,26 +1,24 @@
 /* General styles */
 body {
-  background-color: var(--background-dark);
-  color: var(--text-dark);
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
-  --background-light: #f4f4f4;
-  --text-light: #1c1c1c;
-  --highlight-light: #005f99;
-  --accent-light: #0077cc;
-  --sidebar-light: #e6e6e6;
-  --border-light: #d0d0d0;
+  --background-light: #F5F5F5;
+  --text-light: #343A40;
+  --highlight-light: #00407A;
+  --accent-light: #005090;
+  --sidebar-light: #E9ECEF;
+  --border-light: #DEE2E6;
 
-  --background-dark: #121212;
-  --text-dark: #e5e5e5;
-  --highlight-dark: #004080;
-  --accent-dark: #005f99;
-  --sidebar-dark: #1a1a1a;
-  --border-dark: #2b2b2b;
+  --background-dark: #212529;
+  --text-dark: #DEE2E6;
+  --highlight-dark: #6B9ACD;
+  --accent-dark: #8DC1EF;
+  --sidebar-dark: #2C3034;
+  --border-dark: #495057;
 }
 
 [data-theme="light"] {
@@ -44,19 +42,22 @@ body {
 body {
   background-color: var(--background);
   color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Navbar styles */
 .navbar {
-  background-color: var(--highlight);
-  border-bottom: 1px solid var(--border);
+  background-color: var(--background);
+  border-bottom: 2px solid var(--border);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar__link {
   color: var(--text);
   text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 0.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease;
 }
 
 .navbar__link:hover,
@@ -77,6 +78,7 @@ body {
   color: var(--text);
   padding: 1rem;
   border-right: 1px solid var(--border);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .docSidebar .menu__list {
@@ -93,6 +95,9 @@ body {
   color: var(--text);
   text-decoration: none;
   font-size: 1rem;
+  padding: 0.25rem 0;
+  display: block;
+  transition: color 0.2s ease;
 }
 
 .docSidebar .menu__link--active,
@@ -103,16 +108,17 @@ body {
 
 /* Breadcrumb styles */
 .breadcrumbs {
-  background-color: var(--sidebar);
+  background-color: var(--background);
   color: var(--text);
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
 }
 
 .breadcrumbs a {
   color: var(--highlight);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .breadcrumbs a:hover {
@@ -124,25 +130,32 @@ body {
 .docMainContainer {
   background-color: var(--background);
   color: var(--text);
-  padding: 20px;
+  padding: 2rem;
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .docMainContainer h1,
 .docMainContainer h2,
 .docMainContainer h3 {
   color: var(--highlight);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 /* Highlight boxes */
 .admonition {
   border-left: 4px solid var(--accent);
-  background-color: var(--sidebar);
+  background-color: var(--background);
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .admonition-title {
   color: var(--accent);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 /* Code blocks */
@@ -152,75 +165,84 @@ body {
   border-radius: 5px;
   padding: 1rem;
   overflow-x: auto;
+  margin-bottom: 1rem;
 }
 
-.codeBlock .code {
-  color: var(--accent);
+.codeBlock code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.9rem;
 }
 
 /* Footer styles */
 .footer {
-  background-color: var(--highlight);
+  background-color: var(--background);
   color: var(--text);
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
 }
 
 .footer a {
   color: var(--accent);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .footer a:hover {
-  color: var(--accent);
+  color: var(--highlight);
   font-weight: bold;
 }
 
 /* Button styles */
 .button {
   background-color: var(--accent);
-  color: var(--text);
+  color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
   text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .button:hover {
   background-color: var(--highlight);
-  opacity: 0.85;
+  color: white;
 }
 
 /* Pagination styles */
 .pagination-nav__link {
-  background-color: var(--sidebar);
+  background-color: var(--background);
   color: var(--text);
-  border-radius: 5px;
-  padding: 10px 15px;
-  text-decoration: none;
   border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .pagination-nav__link:hover {
-  background-color: var(--accent);
-  color: var(--text);
+  background-color: var(--highlight);
+  color: white;
 }
 
 /* Search bar */
 .navbar__search-input {
-  background-color: var(--sidebar);
+  background-color: var(--background);
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 0.25rem 0.5rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navbar__search-input::placeholder {
   color: var(--text);
-  opacity: 0.6;
+  opacity: 0.7;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Table styles */
@@ -233,13 +255,14 @@ table {
 table th,
 table td {
   border: 1px solid var(--border);
-  padding: 8px 12px;
+  padding: 0.5rem;
   text-align: left;
 }
 
 table th {
   background-color: var(--highlight);
-  color: var(--text);
+  color: white;
+  font-weight: bold;
 }
 
 table tr:nth-child(even) {
@@ -248,17 +271,17 @@ table tr:nth-child(even) {
 
 table tr:hover {
   background-color: var(--accent);
-  color: var(--text);
+  color: white;
 }
 
 /* Icons */
 svg {
   fill: var(--accent);
+  transition: fill 0.2s ease;
 }
 
 svg:hover {
   fill: var(--highlight);
-  opacity: 0.85;
 }
 
 /* Additional styles */
@@ -266,7 +289,7 @@ svg:hover {
 .small-img {
   width: 25%;
   max-width: 300px;
-  height: auto; 
+  height: auto;
 }
 
 html {
@@ -275,5 +298,5 @@ html {
 
 hr {
   margin: 2rem 0;
-  border: 1px solid #ccc;
+  border: 1px solid #D3D3D3;
 }
