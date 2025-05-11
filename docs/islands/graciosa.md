@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Graciosa Island
+# Graciosa
 
 Graciosa is known for its peaceful environment and unique volcanic features, earning it the nickname "White Island."
 

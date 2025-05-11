@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Corvo Island
+# Corvo
 
 Corvo is the smallest and northernmost island in the Azores. Known for its tranquility and natural beauty, it is a UNESCO Biosphere Reserve.
 

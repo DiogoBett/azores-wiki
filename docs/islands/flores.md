@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Flores Island
+# Flores
 
 Flores is renowned for its stunning waterfalls, lush vegetation, and serene landscapes. It is also a UNESCO Biosphere Reserve.
 

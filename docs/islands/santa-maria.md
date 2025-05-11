@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# Santa Maria Island
+# Santa Maria
 
 Santa Maria is the oldest island in the Azores, known for its warm climate, golden beaches, and historical landmarks.
 

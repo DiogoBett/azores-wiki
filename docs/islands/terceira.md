@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# Terceira Island
+# Terceira
 
 Terceira is known for its vibrant culture, historical significance, and volcanic landscapes.
 

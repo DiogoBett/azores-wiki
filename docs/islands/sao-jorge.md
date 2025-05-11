@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# São Jorge Island
+# São Jorge
 
 São Jorge is famous for its dramatic cliffs and the unique "fajãs," which are flat areas of land formed by lava flows.
 
