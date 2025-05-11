@@ -1,21 +1,9 @@
 const sidebars = {
   docs: [
     {
-      type: 'category',
-      label: 'Islands',
-      collapsible: true,
-      collapsed: false,
-      items: [
-        'islands/corvo',
-        'islands/flores',
-        'islands/faial',
-        'islands/pico',
-        'islands/sao-jorge',
-        'islands/graciosa',
-        'islands/terceira',
-        'islands/sao-miguel',
-        'islands/santa-maria',
-      ],
+      type: 'doc',
+      id: 'overview',
+      label: 'Overview',
     },
     {
       type: 'doc',
@@ -31,6 +19,23 @@ const sidebars = {
       type: 'doc',
       id: 'demographics',
       label: 'Demographics',
+    },
+    {
+      type: 'category',
+      label: 'Islands',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        'islands/corvo',
+        'islands/flores',
+        'islands/faial',
+        'islands/pico',
+        'islands/sao-jorge',
+        'islands/graciosa',
+        'islands/terceira',
+        'islands/sao-miguel',
+        'islands/santa-maria',
+      ],
     },
   ],
 };

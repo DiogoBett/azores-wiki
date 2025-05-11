@@ -53,7 +53,7 @@ const config: Config = {
             { to: 'docs/islands/santa-maria', label: 'Santa Maria' },
           ],
         },
-        { href: 'https://github.com/DiogoBett/azores-wiki', position: 'right', html: `<img src="img/github-logo.svg" alt="GitHub" class="navbar-logo" />` },
+        { href: 'https://github.com/DiogoBett/azores-wiki', position: 'right', html: `<img src="/azores-wiki/img/github-logo.svg" alt="GitHub" class="navbar-logo" />` },
       ],
     },
     footer: {
