@@ -261,6 +261,18 @@ svg:hover {
   opacity: 0.85;
 }
 
+/* Additional styles */
+
+.small-img {
+  width: 50%;
+  max-width: 300px;
+  height: auto; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 hr {
   margin: 2rem 0;
   border: 1px solid #ccc;

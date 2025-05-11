@@ -34,6 +34,10 @@ const config: Config = {
         src: 'img/azores-flag.png',
       },
       items: [
+        { to: 'docs/overview', label: 'Overview', position: 'left' },
+        { to: 'docs/history', label: 'History', position: 'left' },
+        { to: 'docs/geography', label: 'Geography', position: 'left' },
+        { to: 'docs/demographics', label: 'Demographics', position: 'left' },
         {
           label: 'Islands',
           position: 'left',
@@ -49,9 +53,6 @@ const config: Config = {
             { to: 'docs/islands/santa-maria', label: 'Santa Maria' },
           ],
         },
-        { to: 'docs/history', label: 'History', position: 'left' },
-        { to: 'docs/geography', label: 'Geography', position: 'left' },
-        { to: 'docs/demographics', label: 'Demographics', position: 'left' },
         { href: 'https://github.com/DiogoBett/azores-wiki', position: 'right', html: `<img src="img/github-logo.svg" alt="GitHub" class="navbar-logo" />` },
       ],
     },
