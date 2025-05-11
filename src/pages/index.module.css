@@ -36,11 +36,10 @@ img {
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: auto;
   color: var(--highlight);
   font-family: 'Roboto', sans-serif;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.5rem;
+  padding-bottom: auto;
 }
 
 p {

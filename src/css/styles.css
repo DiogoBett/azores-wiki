@@ -139,7 +139,6 @@ body {
 .docMainContainer h2,
 .docMainContainer h3 {
   color: var(--highlight);
-  border-bottom: 1px solid var(--border);
   padding-bottom: 0.5rem;
   margin-top: 1.5rem;
 }
