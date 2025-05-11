@@ -6,6 +6,11 @@
   color: var(--text-color); /* Dynamic text color */
 }
 
+img {
+  width: auto;
+  height: auto;
+}
+
 /* Styling for the Map Container */
 .mapContainer {
   position: relative;
@@ -15,17 +20,14 @@
 
 /* Styling for the Map Image */
 .mapImage {
+  display: inline-block;
+  position: relative;
   max-width: 100%;
   height: auto;
   border: 3px solid var(--highlight-color); /* Dynamic border color */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.mapImage:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 /* Headline Styling */
