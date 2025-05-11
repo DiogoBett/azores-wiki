@@ -2,7 +2,7 @@ import { Config } from '@docusaurus/types';
 
 const config: Config = {
   title: 'Azores Wiki',
-  tagline: 'Explore the beautiful Azores islands',
+  tagline: 'A wiki about the nine islands of the Azores.',
   url: 'https://diogobett.github.io',
   baseUrl: '/azores-wiki/',
   onBrokenLinks: 'throw',
@@ -30,8 +30,8 @@ const config: Config = {
     navbar: {
       title: 'Azores Wiki',
       logo: {
-        alt: 'Azores Wiki Logo',
-        src: 'img/flagAzores.png',
+        alt: 'The Flag of the Azores',
+        src: 'img/azores-flag.png',
       },
       items: [
         {
@@ -52,7 +52,7 @@ const config: Config = {
         { to: 'docs/history', label: 'History', position: 'left' },
         { to: 'docs/geography', label: 'Geography', position: 'left' },
         { to: 'docs/demographics', label: 'Demographics', position: 'left' },
-        { href: 'https://github.com/DiogoBett/azores-wiki', label: 'GitHub', position: 'right' },
+        { href: 'https://github.com/DiogoBett/azores-wiki', position: 'right', html: `<img src="img/github-logo.svg" alt="GitHub" class="navbar-logo" />` },
       ],
     },
     footer: {
@@ -69,12 +69,13 @@ const config: Config = {
         {
           title: 'More',
           items: [
+            { label: 'Trails', to: '/trails' },
             { label: 'About', to: '/about' },
             { label: 'GitHub', href: 'https://github.com/DiogoBett/azores-wiki' },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Azores Wiki. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Diogo Bettencourt`,
     },
   },
 };

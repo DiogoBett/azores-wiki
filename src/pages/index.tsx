@@ -6,13 +6,14 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title="Azores Wiki"
-      description="Explore the beautiful islands of the Azores">
+      description="A wiki about the nine islands of the Azores.">
       <main className={styles.main}>
         <h1>Welcome to the Azores Wiki</h1>
-        <p>Click on an island to learn more about it!</p>
+        <hr/>
+        <p>Use the map below to click on an island and learn more about it.</p>
         <div className={styles.mapContainer}>
           <img
-            src="img/mapAzores.png"
+            src="img/azores-map.png"
             alt="Map of the Azores"
             useMap="#azores-map"
             className={styles.mapImage}
