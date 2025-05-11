@@ -3,7 +3,7 @@ import { Config } from '@docusaurus/types';
 const config: Config = {
   title: 'Azores Wiki',
   tagline: 'Explore the beautiful Azores islands',
-  url: 'https://DiogoBett.github.io',
+  url: 'https://diogobett.github.io',
   baseUrl: '/azores-wiki/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
