@@ -36,6 +36,8 @@ const config: Config = {
       logo: {
         alt: 'The Flag of the Azores',
         src: 'img/azores-flag.png',
+        href: 'https://diogobett.github.io/azores-wiki/',
+        style: { borderRadius: '15%' },
       },
       items: [
         {
