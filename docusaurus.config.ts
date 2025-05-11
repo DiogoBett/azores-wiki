@@ -69,8 +69,8 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            { label: 'Trails', to: '/trails' },
             { label: 'About', to: '/about' },
+            { label: 'Trails', href: 'https://trails.visitazores.com/en/azores-islands' },
             { label: 'GitHub', href: 'https://github.com/DiogoBett/azores-wiki' },
           ],
         },
