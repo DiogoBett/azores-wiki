@@ -4,10 +4,10 @@ import Layout from '@theme/Layout';
 export default function About(): JSX.Element {
   return (
     <Layout
-      title="About Azores Wiki"
+      title="About"
       description="Learn more about the Azores Wiki project">
       <main style={{ padding: '2rem', textAlign: 'center' }}>
-        <h1>About Azores Wiki</h1>
+        <h1>About</h1>
         <hr />
         <p>Azores Wiki is a project dedicated to showcasing the Azores archipelago.</p>
         <p>My personal goal with this project is to provide detailed, accurate and personal information about each of the nine islands.</p>
