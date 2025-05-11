@@ -35,17 +35,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-
-      - name: GitHub Pages
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const response = await github.repos.createPagesDeployment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              source: {
-                branch: 'gh-pages',
-                path: '/'
-              }
-            });
-            core.info(`Triggered Pages build with deployment ID: ${response.data.id}`);
