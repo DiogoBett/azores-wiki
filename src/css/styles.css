@@ -1,6 +1,5 @@
-/* General styles for the body */
+/* General styles */
 body {
-  /* Default to Dark Mode */
   background-color: var(--background-dark);
   color: var(--text-dark);
   margin: 0;
@@ -8,26 +7,22 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Light and Dark Mode Variables */
 :root {
-  /* Light Mode Variables */
-  --background-light: #f4f4f4; /* Soft light gray */
-  --text-light: #1c1c1c; /* Dark gray for text */
-  --highlight-light: #005f99; /* Muted blue for highlights */
-  --accent-light: #0077cc; /* Calm blue for accents */
-  --sidebar-light: #e6e6e6; /* Light gray for sidebar background */
-  --border-light: #d0d0d0; /* Light gray for borders */
+  --background-light: #f4f4f4;
+  --text-light: #1c1c1c;
+  --highlight-light: #005f99;
+  --accent-light: #0077cc;
+  --sidebar-light: #e6e6e6;
+  --border-light: #d0d0d0;
 
-  /* Dark Mode Variables */
-  --background-dark: #121212; /* Deep black for background */
-  --text-dark: #e5e5e5; /* Light gray for text */
-  --highlight-dark: #004080; /* Muted dark blue for highlights */
-  --accent-dark: #005f99; /* Calm dark blue for accents */
-  --sidebar-dark: #1a1a1a; /* Dark gray for sidebar background */
-  --border-dark: #2b2b2b; /* Dark gray for borders */
+  --background-dark: #121212;
+  --text-dark: #e5e5e5;
+  --highlight-dark: #004080;
+  --accent-dark: #005f99;
+  --sidebar-dark: #1a1a1a;
+  --border-dark: #2b2b2b;
 }
 
-/* Use appropriate variables for Light and Dark Modes */
 [data-theme="light"] {
   --background: var(--background-light);
   --text: var(--text-light);
@@ -46,7 +41,6 @@ body {
   --border: var(--border-dark);
 }
 
-/* Apply theme variables */
 body {
   background-color: var(--background);
   color: var(--text);
@@ -70,6 +64,13 @@ body {
   color: var(--accent);
 }
 
+.navbar-logo {
+  height: 24px;
+  margin-top: -4px;
+  display: flex;
+  align-items: center;
+}
+
 /* Sidebar styles */
 .docSidebar {
   background-color: var(--sidebar);
@@ -80,23 +81,23 @@ body {
 
 .docSidebar .menu__list {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column;
   align-items: flex-start;
 }
 
 .docSidebar .menu__list-item {
-  margin: 0.5rem 0; /* Add spacing between items */
+  margin: 0.5rem 0;
 }
 
 .docSidebar .menu__link {
-  color: var(--text); /* Text color for sidebar links */
+  color: var(--text);
   text-decoration: none;
   font-size: 1rem;
 }
 
 .docSidebar .menu__link--active,
 .docSidebar .menu__link:hover {
-  color: var(--accent); /* Accent color for active or hovered links */
+  color: var(--accent);
   font-weight: bold;
 }
 
@@ -263,11 +264,4 @@ svg:hover {
 hr {
   margin: 2rem 0;
   border: 1px solid #ccc;
-}
-
-.navbar-logo {
-  height: 24px;
-  margin-top: -4px;
-  display: flex;
-  align-items: center;
 }
