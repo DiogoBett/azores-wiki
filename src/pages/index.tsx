@@ -5,19 +5,12 @@ import styles from './index.module.css';
 export default function Home(): JSX.Element {
   return (
     <Layout
-      title="Azores Wiki"
+      title="Welcome"
       description="A wiki about the nine islands of the Azores.">
       <main className={styles.main}>
-        <h1>Welcome to the Azores Wiki</h1>
-        <hr />
-        <p>Use the map below to click on an island and learn more about it.</p>
+        <h1>Welcome to the Azores</h1>
         <div className={styles.mapContainer}>
-          <img
-            src="img/azores-map.png"
-            alt="Map of the Azores"
-            useMap="#azores-map"
-            className={styles.mapImage}
-          />
+          <img src="img/azores-map.png" alt="Map of the Azores" useMap="#azores-map" className={styles.mapImage} />
           <map name="azores-map">
             <area shape="rect" coords="918,407,810,363" href="/azores-wiki/docs/islands/sao-miguel" title="São Miguel" />
             <area shape="rect" coords="906,527,935,549" href="/azores-wiki/docs/islands/santa-maria" title="Santa Maria" />
@@ -31,6 +24,7 @@ export default function Home(): JSX.Element {
             <area shape="rect" coords="549,256,510,222" href="/azores-wiki/docs/islands/sao-jorge" title="São Jorge" />
           </map>
         </div>
+        <p>Use the map to click on an island and learn more about it.</p>
       </main>
     </Layout>
   );
